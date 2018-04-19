@@ -1,0 +1,12 @@
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\CoreMvcDemo.deps.json
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\CoreMvcDemo.runtimeconfig.json
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\CoreMvcDemo.runtimeconfig.dev.json
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\CoreMvcDemo.dll
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\CoreMvcDemo.pdb
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.csproj.CoreCompileInputs.cache
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.AssemblyInfoInputs.cache
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.AssemblyInfo.cs
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.dll
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.pdb
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\wwwroot\images\Sheep.jpg
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.csprojResolveAssemblyReference.cache

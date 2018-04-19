@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "AllStudents";
+}
+
+<h2>All Students</h2>
+
+<ul>
+    @foreach(string name in Model)
+    {
+        <li>@name</li>
+    }
+</ul>

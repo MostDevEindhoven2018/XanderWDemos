@@ -1,0 +1,30 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+Firstname:
+<br />
+@Model.Firstname
+<br />
+<br />
+
+Last name:
+<br />
+@Model.Lastname
+
+<br />
+<br />
+
+Date of Birth:
+<br />
+@Model.DateOfBirth.ToString("dd-MM-yyyy")
+
+<br /><br />
+
+<img src="@Model.PictureURL" height="200" />
+
+
