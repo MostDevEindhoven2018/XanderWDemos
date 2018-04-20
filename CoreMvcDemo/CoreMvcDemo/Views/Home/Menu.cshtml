@@ -1,0 +1,894 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        body
+        {
+            background-color: gray;
+            margin: 20px 25%;
+        }
+
+        .beschrijving
+        {
+            width: 80%;
+            float: left;
+        }
+
+        .euro {
+            width: 5%;
+            float: left;
+        }
+
+        .prijs {
+            width: 15%;
+            float: left;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 200%;
+            border-bottom: 5px solid blue;
+            background-color: white;
+            margin: 0;
+        }
+
+        header
+        {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 10px 0 10px 0;
+        }
+
+        #foodPage {
+            background-color: yellow;
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        #drinksPage {
+            background-color: blue;
+            color: yellow;
+        }
+
+        .MenuPage {
+            padding: 20px;
+            column-count: 2;
+        }
+
+        #cookiePopup
+        {
+            position: fixed;
+            top: 200px;
+            left: 30%;
+
+            background-color: white;
+            width: 40%;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        function removePopup()
+        {
+            document.getElementById("cookiePopup").style.display = "None";
+            //alert("Did it!");
+
+            //console.log("Did it!");
+
+            // JS is weakly typed (C# is strongly typed)
+            var age = 44;
+
+            if (age > 30)
+                alert("You are an old man!");
+            else
+                alert("You are a good looking young man!");
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="cookiePopup" onclick="removePopup();" >
+        Do you accept cookies?
+
+        <input type="button" value="Yes I do!" />
+    </div>
+
+    <h1>Eten</h1>
+
+    <div id="foodPage" class="MenuPage">
+
+
+        <header>Broodjes</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje ham</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje kaas</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje ei</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje filet American</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje filet American speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Pistolet brie</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje kroket</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje frikandel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje frikandel speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje kaassoufflé</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje kipkorn</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje bal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje hamburger</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje hamburger speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Stokbrood Mexicano</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Portie kipsaté 3 st.</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Tosti ham/kaas</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Vlamtosti</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Tosti saté</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,75</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Diverse uitsmijters</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Uitsmijter ham, kaas of spek</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,00</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Diverse huisgemaakte Panini’s</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Ham en kaas</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Ham/kaas/tomaat/ui</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kaas/salami/tomaat</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Beenham, brie en komkommer</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Specialiteiten Maribu</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Uitsmijter Maribu</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,50</div>
+        </div>
+
+        <div class="extra">Ham, kaas, spek met gebakken tomaat en ui.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Salade Mondriaan (vegetarisch)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,50</div>
+        </div>
+
+        <div class="extra">Mix salade, komkommer, tomaat, ui, augurk, ei, dressing en brood.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Maaltijdsalade Maribu</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,50</div>
+        </div>
+
+        <div class="extra">Mix salade, komkommer, tomaat, ui, augurk, ei, gebakken spek, dressing en brood.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Broodje Maribu</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,00</div>
+        </div>
+
+        <div class="extra">Italiaanse bol met sla, gebakken spek, ei, tomaat, paprika, ui en pikante saus.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Pistolet Tonijnsalade</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,00</div>
+        </div>
+
+        <div class="extra">Heerlijke huisgemaakte tonijnsalade.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Pistolet gezond speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Salade rundvlees</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,00</div>
+        </div>
+
+        <div class="extra">Rundvleessalade, mix salade, tomaat, komkommer, ui, augurk, ei, ham en brood.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">4-jaargetijden broodje</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">7,50</div>
+        </div>
+
+        <div class="extra">Pistolet, met warme brie, honing, walnoten, gebakken spek en garnering,.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bal gehakt schotel brood</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,00</div>
+        </div>
+
+        <div class="extra">Huisgemaakte bal 350 gr, 2 boterhammen, garnering, gebakken ui, tomaat, paprika en chilisaus</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bal gehakt schotel patat</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">11,00</div>
+        </div>
+
+        <div class="extra">Huisgemaakte bal, patat, garnering, gebakken ui, tomaat en paprika en chilisaus</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Saté schotel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">11,00</div>
+        </div>
+
+        <div class="extra">Kipsate, patat, garnering en kroepoek.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kip schotel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,50</div>
+        </div>
+
+        <div class="extra">Kippenboutjes, patat en garnering.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Wienerschnitzel schotel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">13,50</div>
+        </div>
+
+        <div class="extra">Schnitzel, patat, garnering.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Loempia Speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">9,50</div>
+        </div>
+
+        <div class="extra">Loempia, 1 stokje sate, gebakken ei, ham, kroepoek, satesaus en garnering.</div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bami of Nasi schotel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">11,00</div>
+        </div>
+
+        <div class="extra">Met 1 stokje sate, gebakken ei, ham, kroepoek, satesaus.</div>
+
+        <br style="clear: both" />
+
+        <header>Snacks</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Frikandel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Frikandel speciaal</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kroket</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kaassoufflé</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Mexicano</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bami schijf</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bal gehakt (350 gr)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Vietnamese loempia’s (vegetarisch)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Loempia</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kipcorn</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Zure Bom</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">1,00</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Patat</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Verse patat</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Ras patat</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kinder patat</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,10</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Mayonaise/Ketchup/Curry/Joppie</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">0,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Pindasaus</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">0,75</div>
+        </div>
+
+
+    </div>
+
+    <h1>Drinken</h1>
+
+    <div id="drinksPage" class="MenuPage">
+
+
+        <br style="clear: both" />
+
+        <header>Warme Dranken</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Koffie</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Cappuccino</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Koffie verkeerd</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Espresso</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Thee div. smaken</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">1,80</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Warme chocolademelk</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,90</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Slagroom</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">0,60</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Voor bij de koffie</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Appeltaart (Dudok)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,95</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Hazelnoot (Maison Kelder)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,95</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Frisdranken</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Coca Cola</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,45</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Coca Cola-light</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,45</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Fanta</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,45</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Sprite</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,45</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Nestea</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,85</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Chocomel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,60</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Fristi</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,60</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Verse jus d’orange</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,95</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Chaudfontaine (0,50 ltr)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bitter lemon</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Cassis</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Tonic</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Spa rood</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Rivella</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Appelsap</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Tomatensap</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,60</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Red Bull</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Ice Tea Green</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,85</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Sterke Drank</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Wiskey Cola blik</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bacardi Cola blik</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Malibu Cola blik</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Bieren</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Heineken bier glas</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Heineken bier groot</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Heineken bier pitcher</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">14,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Heineken bier blik</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">2,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Amstel bier blik</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Wieckse Witte</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Grimbergen dubbel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Leffe blond</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bavaria wit 0%</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Duvel</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Amstel Radler 2%</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Amstel Radler 0%</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Liefmans</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Wijnen</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Witte wijn droog/zoet</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Rode wijn</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Rosé</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Port</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Vermouth</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">3,75</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Prosecco</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,25</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Fles wijn rood/wit/rosé</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">17,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Fles Prosecco</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">20,00</div>
+        </div>
+
+        <br style="clear: both" />
+
+        <header>Voor bij de borrel</header>
+
+        <div class="gerecht">
+            <div class="beschrijving">Bitterballen (6 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Elftalletje bitterballen</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">8,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Borrelgarnituur (10 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">6,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Vlammetjes (6 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kipnuggets (6 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Kaasstengels (6 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">4,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Vegetarische loempia’s (10 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,00</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Gegrilde kippenboutjes (6 stuks)</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,50</div>
+        </div>
+
+        <div class="gerecht">
+            <div class="beschrijving">Stokbrood Kruidenboter</div>
+            <div class="euro">&euro;</div>
+            <div class="prijs">5,50</div>
+        </div>
+
+        <div class="extra">met tapenade en olijven</div>
+    </div>
+
+
+
+</body>
+</html>

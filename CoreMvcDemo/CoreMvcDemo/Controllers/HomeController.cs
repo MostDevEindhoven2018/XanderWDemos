@@ -63,5 +63,23 @@ namespace CoreMvcDemo.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+
+        public IActionResult CssDemo()
+        {
+            return View();
+        }
+
+        public IActionResult Menu()
+        {
+            return View();
+        }
+
+        public IActionResult JavascriptDemo()
+        {
+            return View();
+        }
     }
 }

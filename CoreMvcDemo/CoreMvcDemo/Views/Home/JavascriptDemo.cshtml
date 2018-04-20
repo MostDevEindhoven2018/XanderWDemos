@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavascriptDemo</title>
+
+@*    <script src="~/wwwroot/lib/jquery/dist/jquery.js"></script>*@
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/sunny/jquery-ui.css" rel="stylesheet" />
+
+    <script>
+        function Calculate() {
+            
+            var num1 = document.getElementById("firstNumber").value;
+            var num2 = document.getElementById("secondNumber").value;
+
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            var sum = num1 / num2;
+
+            document.getElementById("answer").innerHTML = "The answer is " + sum;
+        }
+
+        function initPage() {
+            // jQuery
+
+            $("#dateOfBirth").datepicker(
+                {
+                    dateFormat: "d-M-yy",
+                    changeYear: true
+                }
+            );
+
+        }
+
+
+        function clearForm() {
+            //document.getElementById("firstNumber").value = "";
+            //document.getElementById("secondNumber").value = "";
+
+            //$("input[type=text]").val("");
+            $(".inputField").val("");
+
+            $("input[type=button]").fadeOut().fadeIn();
+
+            $("div").slideUp().slideDown();
+        }
+    </script>
+</head>
+<body onload="initPage();">
+
+    <div>
+
+        First number: <input id="firstNumber" class="inputField" type="text" />
+
+        <br /><br />
+
+        Second number: <input id="secondNumber" class="inputField" type="text" />
+
+        <br /><br />
+
+        <input type="button" value="Calculate" onclick="Calculate();" />
+
+        <br /><br />
+
+        <p id="answer"></p>
+
+        <br /><br />
+
+        Date of birth:
+        <input type="text" id="dateOfBirth" />
+
+        <br /><br />
+
+        <input type="button" value="Clear form" onclick="clearForm();" />
+    </div>
+
+</body>
+</html>

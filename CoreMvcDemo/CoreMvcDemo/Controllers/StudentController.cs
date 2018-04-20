@@ -180,7 +180,6 @@ namespace CoreMvcDemo.Controllers
 
             var result = ctx.ExamResults.First();
 
-
             return View(query.ToList());
         }
     }
