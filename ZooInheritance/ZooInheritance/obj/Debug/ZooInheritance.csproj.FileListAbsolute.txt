@@ -1,0 +1,10 @@
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\bin\Debug\ZooInheritance.exe.config
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\bin\Debug\ZooInheritance.exe
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\bin\Debug\ZooInheritance.pdb
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.csprojResolveAssemblyReference.cache
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.Form1.resources
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.Properties.Resources.resources
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.csproj.GenerateResource.cache
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.csproj.CoreCompileInputs.cache
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.exe
+C:\VSProjects\MDE2018\ZooInheritance\ZooInheritance\obj\Debug\ZooInheritance.pdb
