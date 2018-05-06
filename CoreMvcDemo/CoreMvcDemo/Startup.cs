@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+
 using Microsoft.EntityFrameworkCore;
 
 namespace CoreMvcDemo
@@ -28,6 +29,7 @@ namespace CoreMvcDemo
                 option.UseSqlServer(Configuration.GetConnectionString("StudentsDatabase"))
             );
 
+            services.AddSession(options => options.IdleTimeout = TimeSpan.FromMinutes(20));
             services.AddMvc();
         }
 
@@ -45,7 +47,7 @@ namespace CoreMvcDemo
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

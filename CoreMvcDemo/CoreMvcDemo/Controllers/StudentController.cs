@@ -178,9 +178,27 @@ namespace CoreMvcDemo.Controllers
                             Description = r.Exam.Description
                         };
 
-            var result = ctx.ExamResults.First();
-
             return View(query.ToList());
         }
+
+        public IActionResult AllResultsJson()
+        {
+            var query = from r in ctx.ExamResults
+                        select new AllResultsViewModel
+                        {
+                            Score = r.Score,
+                            When = r.When,
+                            Firstname = r.Student.Firstname,
+                            Lastname = r.Student.Lastname,
+                            Code = r.Exam.Code,
+                            Description = r.Exam.Description
+                        };
+
+            var results = query.ToList();
+
+            return Json(results);
+        }
+
+
     }
 }

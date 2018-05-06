@@ -148,5 +148,17 @@ namespace CoreMvcDemo.Controllers
         {
             return _context.Students.Any(e => e.StudentID == id);
         }
+
+        public IActionResult NestedObjectBinding()
+        {
+            return View(new StudentAndExam());
+        }
+
+        [HttpPost]
+        public IActionResult NestedObjectBinding([Bind("theStudent,theStudent.Firstname,theStudent.Lastname,theExam,theExam.Code,theExam.Description")]StudentAndExam se)
+        {
+
+            return View();
+        }
     }
 }

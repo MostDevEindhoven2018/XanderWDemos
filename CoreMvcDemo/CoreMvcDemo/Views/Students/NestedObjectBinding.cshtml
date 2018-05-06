@@ -1,0 +1,35 @@
+﻿@model StudentAndExam
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NestedObjectBinding</title>
+</head>
+
+<body>
+    <form asp-action="NestedObjectBinding">
+        Firstname:
+        <input type="text" asp-for="theStudent.Firstname" />
+        <br />
+        Lastname:
+        <input type="text" asp-for="theStudent.Lastname" />
+        <br />
+
+        Exam code:
+        <input type="text" asp-for="theExam.Code" />
+        <br />
+        Exam description:
+        <input type="text" asp-for="theExam.Description" />
+        <br />
+        <br />
+        <input type="submit" value="Send form" />
+    </form>
+</body>
+
+</html>

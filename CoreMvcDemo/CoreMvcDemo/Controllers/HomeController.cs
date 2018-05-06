@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CoreMvcDemo.Models;
+using Microsoft.AspNetCore.Http;
+
+using System.Web;
 
 namespace CoreMvcDemo.Controllers
 {
@@ -12,6 +15,7 @@ namespace CoreMvcDemo.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.TheDay = HttpContext.Session.GetInt32("TheChosenDay");
             return View();
         }
 
@@ -82,6 +86,31 @@ namespace CoreMvcDemo.Controllers
             return View();
         }
 
-    
+        public IActionResult TablesDemo()
+        {
+            return View();
+        }
+
+
+        public IActionResult FormDemo()
+        {
+            ViewBag.Names = new [] { "Xander", "Gerard", "Aeneas" };
+
+            return View();
+        }
+
+        [HttpPost]
+        //public IActionResult FormDemo(int firstNumber, int secondNumber, int year, int month, int day, int hours, int minutes)        //public IActionResult FormDemo(int firstNumber, int secondNumber, int year, int month, int day, int hours, int minutes)        //public IActionResult FormDemo(int firstNumber, int secondNumber, int year, int month, int day, int hours, int minutes)
+        public IActionResult FormDemo(IFormCollection col, int secondNumber, int GuestID, int day) 
+        {
+            //var mydate = new DateTime(year, month, day, hours, minutes, 0);
+
+            //int firstNumber = int.Parse(col["firstNumber"]);
+
+            // user data can be stored in the session
+            HttpContext.Session.SetInt32("TheChosenDay", day);
+
+            return View();
+        }
     }
 }

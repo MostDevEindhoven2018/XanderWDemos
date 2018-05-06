@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormDemo</title>
+
+    <script>
+        function HideNumbers() {
+            document.getElementById("divNumbers").style.display = "None";
+            document.getElementById("divDateRow").style.display = "";
+            document.getElementById("btnHideNumbers").disabled = "disabled";
+            document.getElementById("btnHideDateRow").removeAttribute("disabled");
+        }
+
+        function HideDateRow() {
+            document.getElementById("divDateRow").style.display = "None";
+            document.getElementById("divNumbers").style.display = "";
+            document.getElementById("btnHideDateRow").disabled = "disabled";
+            document.getElementById("btnHideNumbers").removeAttribute("disabled");
+        }
+    </script>
+
+</head>
+<body onload="HideDateRow();">
+
+    <form asp-action="FormDemo">
+
+        <div id="divNumbers">
+            First number:
+            <input type="text" name="firstNumber" id="firstNumber" />
+
+            <br />
+
+            Second number:
+            <input type="text" name="secondNumber" id="secondNumber" />
+
+        </div>
+
+        <br /><br />
+
+        <br />
+
+        <div id="divDateRow">
+
+
+            <input type="text" name="day" />
+
+            <select name="month">
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">March</option>
+            </select>
+
+            <input type="text" name="year" />
+
+            <select name="hours">
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+            </select>
+
+            <select name="minutes">
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+            </select>
+
+            <input type="hidden" value="5" name="GuestID" />
+
+            <input type="date" name="somedate" />
+
+            <input type="submit" value="Send" />
+
+        </div>
+
+@*        <select asp-items="@(new SelectList(ViewBag.Names, "id", "name")"></select>*@
+
+        <input type="button" value="Hide Numbers" onclick="HideNumbers();" id="btnHideNumbers" />
+        <input type="button" value="Hide Date row" onclick="HideDateRow();" id="btnHideDateRow" />
+
+    </form>
+
+
+
+</body>
+</html>
