@@ -10,3 +10,8 @@ c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDem
 c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.pdb
 c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\wwwroot\images\Sheep.jpg
 c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.csprojResolveAssemblyReference.cache
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\libwkhtmltox.dll
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\DinkToPdf.dll
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\DinkToPdf.pdb
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\bin\Debug\netcoreapp2.0\DinkToPdf.xml
+c:\vsprojects\MDE2018\CoreMvcDemo\CoreMvcDemo\obj\Debug\netcoreapp2.0\CoreMvcDemo.csproj.CopyComplete

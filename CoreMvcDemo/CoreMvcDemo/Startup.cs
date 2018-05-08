@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 
 using Microsoft.EntityFrameworkCore;
+using DinkToPdf.Contracts;
+using DinkToPdf;
 
 namespace CoreMvcDemo
 {
@@ -31,6 +33,7 @@ namespace CoreMvcDemo
 
             services.AddSession(options => options.IdleTimeout = TimeSpan.FromMinutes(20));
             services.AddMvc();
+            services.AddSingleton(typeof(IConverter), new BasicConverter(new PdfTools()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
